@@ -23,3 +23,13 @@ to map it to the cloned repo folder.
 
 I then copied the "retrodiner" template into the project's "public" folder,
 to match the starter repo for lab 3.
+
+http://diner.local will show a folder list of the repository document root.
+http://diner.local/public will show the static site.
+
+# 1-setup
+
+I then copied the CodeIgniter starter, that should have been created last week.
+This should be the starting point for your lab3.
+
+In my case, http://diner.local now shows the default CI welcome page.
