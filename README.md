@@ -33,3 +33,14 @@ I then copied the CodeIgniter starter, that should have been created last week.
 This should be the starting point for your lab3.
 
 In my case, http://diner.local now shows the default CI welcome page.
+
+# 2-trivial
+
+Copy the HTML files into the application/views folder of what will be 
+our app.
+
+Create simple controllers to load the views.
+
+Fix the menus, to reference our controllers.
+
+Fix the image references.
