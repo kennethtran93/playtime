@@ -12,3 +12,14 @@ I will add notes here, but the general plan is
 1) convert to a trivial CI site;
 2) convert to a basic CI site (view templating);
 3) convert to a good CI site (using models)
+
+# 0-initial
+
+I cloned the repository, and set it up as a NetBeans project, git ignoring the
+NB metadata.
+
+I created a new local domain (diner.local) and configured httpd-vhosts.conf
+to map it to the cloned repo folder.
+
+I then copied the "retrodiner" template into the project's "public" folder,
+to match the starter repo for lab 3.
