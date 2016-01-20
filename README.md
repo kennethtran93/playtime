@@ -7,7 +7,8 @@ each conversion stage (separate lab 3 tutorials for COMP4711 and ACIT4850). That
 branches in your IDE to view the evolution of the site :)
 
 I will add notes here, but the general plan is 
-0) setup
-1) convert to a trivial CI site
-2) convert to a basic CI site (vire templating)
+
+0) setup;
+1) convert to a trivial CI site;
+2) convert to a basic CI site (view templating);
 3) convert to a good CI site (using models)
