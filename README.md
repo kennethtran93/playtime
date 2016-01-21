@@ -86,3 +86,12 @@ All we have to do is modify our controllers, so they extend Application instead
 of CI_Controller, and so that each sets the 'pagebody' view parameter
 properly before calling the inherited "render" method.
 Oops - we need to strip the common data from the views too!
+
+# 4 - Cleaned Up
+
+Going through each of the new site pages, I see there are still links to be
+cleaned up, for instance on the homepage, links to some of the diner menu pages.
+I found similar fixes were needed on the contact, blog and about pages.
+
+I also removed the class="active" from the navbar area - I don't see it used,
+and we will address that later if needed.

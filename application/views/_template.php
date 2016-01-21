@@ -12,7 +12,7 @@
 			<a href="/"><img  src="/images/waitress.png" width="332" height="205" alt="" title=""></a>
 			<ul class="navigation">
 				<li>
-					<a class="active" href="/">Home</a>
+					<a href="/">Home</a>
 				</li>
 				<li>
 					<a href="/about">About</a>

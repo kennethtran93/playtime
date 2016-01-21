@@ -5,13 +5,13 @@
 	</p>
 	<ul>
 		<li>
-			<a href="hotdog.html"><img src="images/hotdogs.jpg" width="284" height="214" alt=""></a>
+			<a href="/menu/hotdog"><img src="/images/hotdogs.jpg" width="284" height="214" alt=""></a>
 		</li>
 		<li>
-			<a href="shake.html"><img src="images/shakes.jpg" alt="" width="284" height="214"></a>
+			<a href="/menu/shake"><img src="/images/shakes.jpg" alt="" width="284" height="214"></a>
 		</li>
 		<li>
-			<a href="breakfast.html"><img src="images/breakfast.jpg" alt="" width="284" height="214"></a>
+			<a href="/menu/breakfast"><img src="/images/breakfast.jpg" alt="" width="284" height="214"></a>
 		</li>
 	</ul>
 </div>
