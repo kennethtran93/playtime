@@ -2,26 +2,30 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Menu extends CI_Controller {
+class Menu extends Application {
 
 	public function index()
 	{
-		$this->load->view('burger');
+		$this->data['pagebody'] = 'burger';
+		$this->render();
 	}
 
 	public function hotdog()
 	{
-		$this->load->view('hotdog');
+		$this->data['pagebody'] = 'hotdog';
+		$this->render();
 	}
 
 	public function shake()
 	{
-		$this->load->view('shake');
+		$this->data['pagebody'] = 'shake';
+		$this->render();
 	}
 
 	public function breakfast()
 	{
-		$this->load->view('breakfast');
+		$this->data['pagebody'] = 'breakfast';
+		$this->render();
 	}
 
 }

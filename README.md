@@ -44,3 +44,45 @@ Create simple controllers to load the views.
 Fix the menus, to reference our controllers.
 
 Fix the image references.
+
+# 3 - basic
+
+Refactor the views, by extracting the common parts of all views into a template,
+and adding a master controller (application/core/MY_Controller) to pull the
+pieces together.
+
+I started by grabbing application/core/MY_Controller from the example-contacts
+project. We will use this as our base controller. 
+
+I see that it provides for an array of view parameters, $this->data.
+Substitution parameters according to it are title, menubar, content and pagebody.
+It uses the parser library, and on digging I found that the application/config/autoload
+is where that is referenced, as well as a couple of helpers. Grabbed it, and
+removed the autoloading for the database library and contacts model -
+we don't need those yet.
+Hmm - it references a "build_menu" function ... digging, I found that in 
+application/helpers/common_helper inside the example-contacts project. 
+I'll grab that too.
+
+We now have three files from the example-contacts project:
+- application/config/autoload.php
+- application/core/MY_Controller.php
+- application/helpers/common_helper.php
+
+I made application/views/_template.php by copying the original welcome view
+and replacing the page-specific content with substitution parameters.
+
+Looking at the template, I can see that I missed some .html links
+in the footer - oops! These need to be changed to match those in the
+top menu navbar.
+
+Ok - the <div id="body"> looks like the content unique to each page.
+I am replacing it with a substitution request, {content}, per the
+base controller.
+
+I commented out the call to build a menu bar from a configuration array -
+we will leave things alone at this stage.
+All we have to do is modify our controllers, so they extend Application instead 
+of CI_Controller, and so that each sets the 'pagebody' view parameter
+properly before calling the inherited "render" method.
+Oops - we need to strip the common data from the views too!
