@@ -76,7 +76,7 @@ Looking at the template, I can see that I missed some .html links
 in the footer - oops! These need to be changed to match those in the
 top menu navbar.
 
-Ok - the <div id="body"> looks like the content unique to each page.
+Ok - the &lt;div id="body"&gt; looks like the content unique to each page.
 I am replacing it with a substitution request, {content}, per the
 base controller.
 
